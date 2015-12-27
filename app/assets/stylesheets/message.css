@@ -1,0 +1,16 @@
+body {
+  font-family: YuGothic, "游ゴシック", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+  background-color: rgba(248,254,250,255);
+  font-size: 14px;
+}
+
+a:link { color: #2f5d50; }
+a:visited { color: #727171; }
+a:hover { color: #2f5d50; }
+a:active { color: #007b43; }
+
+.panel-body {
+  
+    font-size: 16px;
+    line-height: 175%;
+}
