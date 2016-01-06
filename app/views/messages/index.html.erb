@@ -7,7 +7,13 @@
   <div class="panel-body" style="overflow: scroll; width: 100%; height: 400px;">
     <% @messages.each do |message| %>
     <% #message.inspect %>
-      <span class="label label-success"><%= message.name %> ( <%= message.age %> ) </span>
+      <span class="label label-success"><%= message.name %> (
+      <% if(message.age.present?) %>
+        <%= message.age %>
+      <% else %>
+        xxx
+      <% end %>
+      ) </span>
       <%= message.body %>
       <span style="font-size: 12px;">
       &lt;<%= link_to "EDIT" , edit_message_path(message) %>&nbsp;
