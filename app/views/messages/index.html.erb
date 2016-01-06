@@ -9,8 +9,8 @@
       <span class="label label-success"><%= message.name %></span>
       <%= message.body %>
       <span style="font-size: 12px;">
-      <<%= link_to "EDIT" , edit_message_path(message) %>
-      <%= link_to "DELETE" , message , method: :delete, data: { confirm: '削除してもよろしいですか？' } %>>
+      &lt;<%= link_to "EDIT" , edit_message_path(message) %>&nbsp;
+      <%= link_to "DELETE" , message , method: :delete, data: { confirm: '削除してもよろしいですか？' } %>&gt;
       </span>
       <br>
     <% end %>
